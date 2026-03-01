@@ -210,6 +210,20 @@ footer{
   padding: 15px;
 }
 @media screen and (min-width: 768px) {
+    main{
+      grid-template-columns: auto 300px 1fr auto;
+    }
+
+    section#ficha{
+      grid-column: 2 / 3 ;
+      height: fit-content;
+      position: sticky;
+      top: 65px;
+    }
+    section#detalhes{
+      grid-column:3 / 4 ;
+    }
+
     #skills-container{
       grid-template-columns: 1fr 1fr;
     }
@@ -222,7 +236,7 @@ footer{
      }
     #projeto-container .foto{
       aspect-ratio: 1/1;
-      max-width: 20%;
+      max-width: 100%;
       max-height: 200px;
     }
 }
